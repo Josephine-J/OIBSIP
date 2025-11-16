@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("tempConvert.jpg");
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgb(100, 3, 3);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card >.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.row >.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group >label {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.full {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.full >input{
+    font-weight: bold;
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: color 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+    opacity: 1;
+}
+
+.fade-result {
+    opacity: 0;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00db75;
+    color: black;
+}
